@@ -1,5 +1,9 @@
+import Contact from "./components/Contact";
+import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
+import Projects from "./components/Projects";
+import Technologies from "./components/Technologies";
 
 export default function App() {
   return (
@@ -14,6 +18,10 @@ export default function App() {
       <div className="container mx-auto px-8">
         <NavBar />
         <Hero/>
+        <Technologies/>
+        <Projects/>
+        <Experience/>
+        <Contact/>
       </div>
     </div>
   );
