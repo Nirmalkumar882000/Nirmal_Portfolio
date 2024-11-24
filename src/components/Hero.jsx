@@ -43,7 +43,7 @@ const Hero = () => {
                 initial={{x:100,opacity:0}}
                 animate={{x:0,opacity:1}}
                 transition={{duration:1,delay:1.5}}
-                 className='border border-stone-900 rounded-3xl'/>
+                 className='border border-blue-900 rounded-3xl'/>
             </div>
             </div>
             <div className='w-full lg:w-1/2'>
@@ -54,7 +54,7 @@ const Hero = () => {
                  className='flex flex-col items-center lg:items-start mt-10'>
                     <motion.h2
                     variants={childVarient}
-                     className='pb-2 text-4xl tracking-tighter lg:text-8xl '>
+                     className='pb-2 text-4xl tracking-tighter lg:text-7xl '>
                         Nirmal Kumar M
                     </motion.h2>
                     <motion.span
