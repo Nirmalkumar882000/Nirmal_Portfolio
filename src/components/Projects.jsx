@@ -1,41 +1,103 @@
 import React from 'react'
-import project1 from "/images/project-1.webp"
-import project2 from "/images/project-2.webp"
-import project3 from "/images/project-3.webp"
-import project4 from "/images/project-4.webp"
+
+import portfolio from "../images/portfolio.png"
+import carColor from "../images/3d_Car_color_change.png"
+import monster from "../images/3d_monster.png"
+import butterfly from "../images/Butterfly_3d.png"
+import umaCabs from "../images/cabs.png"
+import camping from "../images/camping.png"
+import candyWheel from "../images/candy wheel.png"
+import candyWheels from "../images/candyWheel.jpg"
+import dreamTravel from "../images/dreamtravel.png"
+import ecommerce from "../images/Ecommerce.png"
+import landingPage from "../images/landing_page.png"
 import {motion} from "framer-motion" 
+
 
 
 const PROJECTS = [
     {
       title: "E-Commerce Website",
-      image: project1,
+      image: ecommerce,
       description:
-        "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-      technologies: [ "React","Tailwind Css", "Node.js","Express js", "MongoDB"],
+        "Developed an e-commerce website using React and a fake API to simulate real-world functionality, focusing on seamless user experience and efficient state management. Implemented responsive design, interactive features, and mock API integration to enhance development and testing processes",
+      technologies: [ "React Js","Tailwind Css", "Moke Api"],
+      link:"https://github.com/"
     },
     {
-      title: "Task Management App",
-      image: project2,
+      title: "3D Portfolio",
+      image: portfolio,
       description:
-        "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-      technologies: ["HTML", "CSS", "Angular", "Firebase"],
+        "Designed and developed a responsive portfolio website using React.js, React Three Fiber, and Tailwind CSS for an interactive and visually appealing user experience.Leveraged 3D graphics and animations with React Three Fiber to create engaging visuals, ensuring responsiveness across all screen sizes.",
+      technologies: ["ReactJs","R3F","Framer Motion"],
+      link:"https://github.com/"
+
     },
     {
-      title: "Portfolio Website",
-      image: project3,
+      title: "3D Monster",
+      image: monster,
       description:
-        "A personal portfolio website showcasing projects, skills, and contact information.",
-      technologies: ["React js", "Tailwind css","Framer Motion"],
+        "Developed a 3D monster animation using React Three Fiber, incorporating realistic movements and textures for an immersive experience.Optimized performance and responsiveness to ensure smooth functionality across devices.",
+        technologies: ["React","R3F"],
+      link:"https://github.com/"
+
     },
     {
-      title: "Blogging Platform",
-      image: project4,
+      title: "3D Butterfly Scroll",
+      image: butterfly,
+      description:
+        "Created an engaging butterfly scroll effect using React Three Fiber, incorporating smooth animations and 3D graphics for an interactive user experience.Ensured seamless responsiveness and performance optimization across all devices.",
+      technologies: ["React", "Vite","R3F","GSAP"],
+      link:"https://github.com/"
+
+    }, 
+      {
+      title: "UmaCabs",
+      image: umaCabs,
+      description:
+        "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
+      technologies: ["Wordpress", "Hosting","SEO","Domin"],
+      link:"https://github.com/"
+
+    }, 
+      {
+      title: "3D Camping",
+      image: camping,
+      description:
+        "Designed an interactive 3D camping scene using React Three Fiber, featuring detailed tents, campfires, and natural surroundings for a realistic experience.Ensured smooth animations and responsiveness, providing an engaging user interface across all devices.",
+      technologies: ["React", "Vite","R3F"],
+      link:"https://github.com/"
+
+    }, 
+     {
+      title: "2D Casino Game",
+      image: candyWheels,
+      description:
+        "Developed Candywheel, a 2D casino game with responsive design, ensuring compatibility across all devices for seamless gameplay.Implemented smooth animations for spinning wheels, coins, and rewards, enhancing user engagement and experience",
+      technologies: ["Phaser js","React js",],
+      link:"https://github.com/"
+
+    },   
+      {
+      title: "DreamTravel",
+      image: dreamTravel,
       description:
         "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
       technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      link:"https://github.com/"
+
+    },  
+     {
+      title: "Landing Page",
+      image: landingPage,
+      description:
+        "Developed a 3D interactive landing page for Dream Travel using React Three Fiber, featuring immersive visuals and animations.Ensured responsiveness and smooth performance across devices for an engaging user experience.",
+      technologies: ["React","RF3","Tailwind Css"],
+      link:"https://github.com/"
+
     },
-  ]
+
+]
 
 
 
@@ -56,7 +118,7 @@ const Projects = () => {
                     whileInView={{opacity:1,x:0}}
                     initial={{opacity:0,x:-100}}
                     transition={{duration:1}}
-                     className='w-full flex justify-center lg:w-1/4 mr-4'>
+                     className='w-full flex justify-center lg:w-1/4 mr-10'>
                         <img src={project.image} alt={project.title} className='mb-6 rounded'/>
                     </motion.div>
                     <motion.div

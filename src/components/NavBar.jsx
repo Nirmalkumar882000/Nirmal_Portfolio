@@ -7,7 +7,7 @@ const NavBar = () => {
     <nav className='flex items-center justify-between py-6'>
         <div className='flex flex-shrink-0 items-center'>
             <a href='/' aria-label='Home'>
-                <h1 className='text-3xl mx-2 font-bold font-pacifico'>MN</h1>
+                <h1 className='text-3xl mx-2 font-bold font-pacifico'>NK</h1>
             </a>
         </div>
         <div className='m-8 flex items-center justify-center gap-4 text-2xl'>

@@ -1,5 +1,5 @@
 import React from 'react'
-import profilePic from "/images/profilepic.png"
+import profilePic from "../images/profilepic.png"
 import {HERO_CONTENT} from "../config/index"
 import {motion} from "framer-motion"
 
@@ -54,16 +54,16 @@ const Hero = () => {
                  className='flex flex-col items-center lg:items-start mt-10'>
                     <motion.h2
                     variants={childVarient}
-                     className='pb-2 text-4xl tracking-tighter lg:text-7xl '>
+                     className='pb-2 text-4xl tracking-tighter lg:text-7xl font-pacifico '>
                         Nirmal Kumar M
                     </motion.h2>
                     <motion.span
-                    variants={childVarient} className='bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl tracking-tight text-transparent'>
+                    variants={childVarient} className='bg-gradient-to-r mt-3 from-stone-300 to-stone-600 bg-clip-text text-3xl tracking-tight text-transparent'>
                         Full Stack Developer
                     </motion.span>
                     <motion.p
                     variants={childVarient} 
-                    className=''>
+                    className='mt-4 flex justify-center'>
                         {HERO_CONTENT}
                     </motion.p>
 
@@ -73,7 +73,7 @@ const Hero = () => {
                     target='_blank'
                     rel='noopener noreferrer'
                     download
-                    className='bg-white mt-5 rounded-full p-4 text-sm text-stone-800 mb-10'
+                    className='bg-white mt-6 rounded-full p-4 text-sm text-stone-800 mb-10'
                     >
                       Download Resume
                     </motion.a>

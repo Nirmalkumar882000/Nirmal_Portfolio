@@ -6,7 +6,14 @@ import { RiNodejsLine } from "react-icons/ri";
 import { SiExpress } from "react-icons/si";
 import { DiRedis, DiUbuntu } from 'react-icons/di';
 import { BiLogoPostgresql } from 'react-icons/bi';
+import { SiMysql } from "react-icons/si";
 import {motion} from "framer-motion"
+import { SiFastify } from "react-icons/si";
+import { SiThreedotjs } from "react-icons/si";
+import { RiTailwindCssLine } from "react-icons/ri";    
+import { FaHtml5 } from "react-icons/fa"; 
+import { IoLogoCss3 } from "react-icons/io";    
+import { FaWordpress } from "react-icons/fa";
 
 const iconVarient =(duration) =>({
     initial:{y:-10},
@@ -36,6 +43,18 @@ const Technologies = () => {
         initial={{opacity:0,y:-100}}
         transition={{duration:1.5}}
          className='flex flex-wrap items-center justify-center gap-4'>
+             <motion.div
+            initial="initial"
+            animate="animate"
+            variants={iconVarient(2.5)} className='p-4'>
+                <FaHtml5  className='text-7xl text-orange-700 animate-bounce  '/>
+            </motion.div>
+            <motion.div
+            initial="initial"
+            animate="animate"
+            variants={iconVarient(2.5)} className='p-4'>
+                <IoLogoCss3   className='text-7xl text-sky-700 animate-bounce  '/>
+            </motion.div>
             <motion.div
             initial="initial"
             animate="animate"
@@ -67,13 +86,31 @@ const Technologies = () => {
             initial="initial"
             animate="animate"
             variants={iconVarient(2.5)} className='p-4'>
-               <DiRedis className='text-7xl text-red-700 animate-shake'/>
+               <SiMysql  className='text-7xl text-blue-700 animate-jelly'/>
             </motion.div>
             <motion.div
             initial="initial"
             animate="animate"
             variants={iconVarient(2.5)} className='p-4'>
-                <BiLogoPostgresql className='text-7xl text-sky-700 animate-slowShake'/>
+                <SiThreedotjs  className='text-7xl text-white animate-spin'/>
+            </motion.div>
+            <motion.div
+            initial="initial"
+            animate="animate"
+            variants={iconVarient(2.5)} className='p-4'>
+                <SiFastify className='text-7xl text-white animate-pulse'/>
+            </motion.div>
+            <motion.div
+            initial="initial"
+            animate="animate"
+            variants={iconVarient(2.5)} className='p-4'>
+                <RiTailwindCssLine  className='text-7xl text-sky-700 animate-jelly'/>
+            </motion.div>
+            <motion.div
+            initial="initial"
+            animate="animate"
+            variants={iconVarient(2.5)} className='p-4'>
+                <FaWordpress  className='text-7xl animate-jelly'/>
             </motion.div>
         </motion.div>
     </div>
