@@ -2,6 +2,7 @@ import React from 'react'
 import profilePic from "../images/profilepic.png"
 import {HERO_CONTENT} from "../config/index"
 import {motion} from "framer-motion"
+import resume from "../images/nirmalkumar.pdf"
 
 
 const containerVarients ={
@@ -54,7 +55,7 @@ const Hero = () => {
                  className='flex flex-col items-center lg:items-start mt-10'>
                     <motion.h2
                     variants={childVarient}
-                     className='pb-2 text-4xl tracking-tighter lg:text-7xl font-pacifico '>
+                     className='pb-2 text-4xl tracking-tighter lg:text-7xl '>
                         Nirmal Kumar M
                     </motion.h2>
                     <motion.span
@@ -69,7 +70,7 @@ const Hero = () => {
 
                     <motion.a
                     variants={childVarient}
-                     href=''
+                     href={resume}
                     target='_blank'
                     rel='noopener noreferrer'
                     download
